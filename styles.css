@@ -1,0 +1,57 @@
+:root{
+    --text-color: white;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: NorseBold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+.left-side{
+    background: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.photo-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: relative;
+    top: 22%;
+}
+.left-side > .photo-text-container > img{
+    width: 22%;
+    height: auto;
+}
+
+.left-side > .photo-text-container > p{
+    font-family: NorseBold, Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 6rem, 8vw);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.photo-footer{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    position: relative;
+    bottom: 0;
+}
+.photo-footer a:visited, .photo-footer a:link{
+    color: var(--text-color);
+}
+
